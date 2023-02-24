@@ -204,6 +204,12 @@ h6,
     background-color: var(--primary) !important;
 }
 
+/*** Hero img ***/
+.hero-img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
 
 /*** Section Title ***/
 .section-title::before {
@@ -275,7 +281,7 @@ h6,
     align-items: center;
     justify-content: center;
     color: var(--light);
-    background: url(../img/icon-shape-primary.png) center center no-repeat;
+    background: url(../img/icon-shape-white.png) center center no-repeat;
     transition: .5s;
 }
 
@@ -565,4 +571,34 @@ h6,
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+/*** client ***/
+.client-item {
+    position: relative;
+    height: 150px;
+    background: #ffffff00;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.client-item:hover .client-icon img {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 15px;
+}
+
+.client-item:hover {
+    background: var(--primary);
+}
+
+
+.client-item h5,
+.client-item p {
+    transition: .5s;
+}
+
+.client-item:hover h5,
+.client-item:hover p {
+    color: var(--light);
 }
